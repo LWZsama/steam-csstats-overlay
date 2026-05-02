@@ -3,7 +3,7 @@
 // @namespace    https://github.com/LWZsama
 // @author       Wenze(Lucas) Luo
 // @license      MIT
-// @version      2.1.0
+// @version      2.1.1
 // @description  Embed CSStats player info and recent match stats into Steam profile pages.
 // @match        https://steamcommunity.com/profiles/*
 // @match        https://steamcommunity.com/id/*
@@ -143,7 +143,7 @@
     s.id = STYLE_ID;
     s.textContent = `
       #${LEFT_HOST_ID}, #${RIGHT_HOST_ID}{
-        position:fixed;
+        position:absolute;
         top:${GAP}px;
         z-index:9999;
         background:rgba(0,0,0,0.55);
