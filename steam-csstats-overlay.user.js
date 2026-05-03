@@ -3,7 +3,7 @@
 // @namespace    https://github.com/LWZsama
 // @author       Wenze(Lucas) Luo
 // @license      MIT
-// @version      2.1.1
+// @version      2.1.2
 // @description  Embed CSStats player info and recent match stats into Steam profile pages.
 // @match        https://steamcommunity.com/profiles/*
 // @match        https://steamcommunity.com/id/*
@@ -32,7 +32,7 @@
   const cssCache = new Map();
 
   function isProfilePage() {
-    return /^\/(profiles|id)\/[^/]+\/?/.test(location.pathname);
+    return /^\/(profiles|id)\/[^/]+\/?$/.test(location.pathname);
   }
 
   function getSteamId64() {
